@@ -57,7 +57,32 @@ body {
   display: block;
 }
 
+.profile {
+  background-color: #CDCDCD;
+  margin-top: 3em;
+  text-align: center;
+  padding: 10px;
+}
+
+.profile_pic {
+  border: 3px solid white;
+  border-radius: 50%;
+  display: inline-block;
+  height: 150px;
+  margin-top: 10px;
+  width: 150px;
+}
+
+.about {
+  background-color: #C06014;
+
+}
+
 @media screen and (min-width: 768px) {
+  .profile {
+    margin-top: 5em;
+  }
+
   .navbar {
     align-items: center;
     display: flex;
