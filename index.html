@@ -8,22 +8,26 @@
         web development and keeping the internet open and free.">
         <meta name="viewport" content="width=device-width, initial-scale=1">
         <link rel="stylesheet" href="styles/style.css" type="text/css">
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
     </head>
     <body>
         <!--Header-->
-        <header class="topnav">
-            <a href="#default">Colin Bingham</a>
+        <header class="header">
             <nav class="navbar">
-                <ul>
-                    <li><a href="#about">about</a></li>
-                    <li><a href="#profile">profile</a></li>
-                    <li><a href="#contact">contact</a></li>
+                <span class="navbar-toggle" id="js-navbar-toggle">
+                  <i class="fa fa-bars"></i>
+                </span>
+                <a href="#" class="logo">Colin Bingham</a>
+                <ul class="main_nav">
+                    <li><a href="#about" class="nav_links">about</a></li>
+                    <li><a href="#profile" class="nav_links">profile</a></li>
+                    <li><a href="#contact" class="nav_links">contact</a></li>
                     <!--Social-->
                     <li>
-                        <ul>
-                            <li><a href="#">Email</a></li>
-                            <li><a href="#">LinkedIn</a></li>
-                            <li><a href="#">GitHub</a></li>
+                        <ul class="secondary_nav">
+                            <li><a href="#" class="nav_links">Email</a></li>
+                            <li><a href="#" class="nav_links">LinkedIn</a></li>
+                            <li><a href="#" class="nav_links">GitHub</a></li>
                         </ul>
                     </li>
                 </ul>
@@ -55,6 +59,7 @@
         <!--Footer-->
         <footer>
             <a href="#">&copy 2019 Colin Bingham</a>
+            <script src="scripts/index.js"></script>
         </footer>
     </body>
 </html>

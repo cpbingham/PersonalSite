@@ -1,0 +1,101 @@
+body {
+  margin: 0;
+  padding: 0 5%;
+}
+
+.navbar * {
+  margin: 0;
+  padding: 0;
+}
+
+.navbar {
+  border: 1px solid rgba(0, 0, 0, 0.2);
+  padding-bottom: 10px;
+}
+
+.logo, .nav_links {
+  text-decoration: none;
+}
+
+.main_nav, .secondary_nav {
+  list-style-type: none;
+  display: none;
+}
+
+.main_nav li {
+  margin: 15px auto;
+  text-align: center;
+}
+
+.secondary_nav li {
+  display: inline;
+}
+
+.logo {
+  display: inline-block;
+  margin: 10px 0px 0px 20px;
+}
+
+.navbar-toggle {
+    cursor: pointer;
+    font-size: 24px;
+    position: absolute;
+    top: 0.5%;
+    left: 87%;
+}
+
+.active {
+  display: block;
+}
+
+@media screen and (min-width: 768px) {
+  .navbar {
+    display: flex;
+    justify-content: space-between;
+    padding-bottom: 0;
+    height: 70px;
+    align-items: center;
+  }
+  .main_nav {
+    display: flex;
+    margin-right: 30px;
+    flex-direction: row;
+    justify-content: flex-end;
+  }
+
+  .main_nav li {
+    margin: 0;
+  }
+  .secondary_nav {
+    display: flex;
+    margin-right: 30px;
+    flex-direction: row;
+    justify-content: flex-end;
+  }
+
+  .secondary_nav li {
+    margin: 0;
+  }
+
+  .nav_links {
+    margin-left: 40px;
+  }
+
+  .logo {
+    margin-top: 0;
+  }
+
+  .navbar-toggle {
+    display: none;
+  }
+
+  .logo:hover,
+  .nav-links:hover {
+      color: rgba(255, 255, 255, 1);
+  }
+  /* Add to desktop media query */
+  .logo:visited, .nav_links:visited {
+    color: #000;
+    text-decoration: none;
+  }
+}

@@ -1,5 +1,5 @@
-let mainNav = document.querySelector('#js_menu');
-let sec = document.querySelector('#sec');
+let mainNav = document.querySelector('.main_nav');
+let secondaryNav = document.querySelector('.secondary_nav');
 
 let navBarToggle = document.getElementById('js-navbar-toggle');
 
@@ -7,6 +7,6 @@ let navBarToggle = document.getElementById('js-navbar-toggle');
 navBarToggle.addEventListener('click', function () {
 
     mainNav.classList.toggle('active');
-    secondary.classList.toggle('active');
+    secondaryNav.classList.toggle('active');
 
 });
