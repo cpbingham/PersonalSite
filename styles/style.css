@@ -100,6 +100,10 @@ body {
   border: 2px solid #EDDBCD;
 }
 
+.contact {
+  text-align: center;
+}
+
 @media screen and (min-width: 768px) {
   .profile {
     margin-top: 5em;
