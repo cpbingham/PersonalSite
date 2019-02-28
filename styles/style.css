@@ -90,14 +90,14 @@ body {
 
 .projects {
   display: grid;
-  grid-template-columns: repeat(auto-fill, minmax(350px, 1fr));
+  grid-template-columns: repeat(auto-fill, minmax(300px, 1fr));
   grid-auto-rows: minmax(100px, auto);
   grid-gap: 20px;
 }
 
 .projects > div {
   border-radius: 5px;
-  padding: 1em 0;
+  padding: 1em 0.5em;
   background-color: #C06014;
   border: 2px solid #EDDBCD;
 }
