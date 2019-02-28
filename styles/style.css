@@ -63,7 +63,7 @@ body {
   background-color: #CCDFCB;
   margin-top: 3em;
   text-align: center;
-  padding: 10px;
+  padding: 1em 2em;
 }
 
 .profile_pic {
@@ -78,6 +78,8 @@ body {
 .about {
   background-color: #C06014;
   text-align: center;
+  padding: 1em 2em;
+  margin: 1em 0;
 }
 
 .portfolio {
@@ -103,13 +105,14 @@ body {
 .contact {
   text-align: center;
   background-color: #CCDFCB;
+  margin: 1em 0;
+  padding: 1em 2em;
 }
 
 .footer {
   border-top: 1px solid black;
   text-align: center;
   padding-top: 1em;
-  margin-top: 1em;
 }
 
 
