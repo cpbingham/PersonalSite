@@ -71,7 +71,7 @@ body {
 }
 
 .profile_pic {
-  border: 3px solid #056571;
+  border: 3px solid #EAE3EA;
   border-radius: 50%;
   display: inline-block;
   height: 150px;
@@ -80,14 +80,14 @@ body {
 }
 
 .about {
-  background-color: #B56357;
+  background-color: #A7B3A5;
   text-align: center;
   padding: 1em 2em;
   margin: 1em 0;
 }
 
 .portfolio {
-  background-color: #EAE3EA;
+  background-color: #B56357;
   text-align: center;
   border: 1px solid black;
   padding: 1em 2em;
@@ -103,8 +103,8 @@ body {
 .projects > div {
   border-radius: 5px;
   padding: 1em 0.5em;
-  background-color: #A7B3A5;
-  border: 2px solid #EDDBCD;
+  background-color: #EAE3EA;
+  border: 2px solid #A7B3A5;
 }
 
 .main_nav > li {
@@ -115,7 +115,7 @@ body {
 
 .contact {
   text-align: center;
-  background-color: #B56357;
+  background-color: #A7B3A5;
   margin: 1em 0;
   padding: 1em 2em;
 }
