@@ -64,7 +64,7 @@ body {
 
 
 .profile {
-  background-color: #CCDFCB;
+  background-color: #B4DBC0;
   margin-top: 3em;
   text-align: center;
   padding: 1em 2em;
@@ -80,13 +80,14 @@ body {
 }
 
 .about {
-  background-color: #C06014;
+  background-color: #B56357;
   text-align: center;
   padding: 1em 2em;
   margin: 1em 0;
 }
 
 .portfolio {
+  background-color: #EAE3EA;
   text-align: center;
   border: 1px solid black;
   padding: 1em 2em;
@@ -102,7 +103,7 @@ body {
 .projects > div {
   border-radius: 5px;
   padding: 1em 0.5em;
-  background-color: #C06014;
+  background-color: #A7B3A5;
   border: 2px solid #EDDBCD;
 }
 
@@ -114,7 +115,7 @@ body {
 
 .contact {
   text-align: center;
-  background-color: #CCDFCB;
+  background-color: #B56357;
   margin: 1em 0;
   padding: 1em 2em;
 }
