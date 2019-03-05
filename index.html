@@ -14,49 +14,118 @@
         <!--Header-->
         <header class="header">
             <nav class="navbar">
-                <span class="navbar-toggle" id="js-navbar-toggle">
+                <span class="navbar-toggle" id="js_navbar_toggle">
                   <i class="fa fa-bars"></i>
                 </span>
                 <a href="#" class="logo">Colin Bingham</a>
                 <ul class="main_nav">
                     <li><a href="#about" class="nav_links">about</a></li>
-                    <li><a href="#profile" class="nav_links">profile</a></li>
+                    <li><a href="#portfolio" class="nav_links">portfolio</a></li>
                     <li><a href="#contact" class="nav_links">contact</a></li>
                     <!--Social-->
                     <li>
                         <ul class="secondary_nav">
-                            <li><a href="#" class="nav_links"><img src="images/email-32px.png" alt="dsfa"></a></li>
-                            <li><a href="#" class="nav_links"><img src="images/In-Black-34px-R.png" alt="dsfa"></a></li>
-                            <li><a href="#" class="nav_links"><img src="images/GitHub-Mark-32px.png" alt="dsfa"></a></li>
+                            <li><a href="mailto: cbingham96@gmail.com" class="nav_links"><img src="images/email-32px.png" alt="Send me an Email"></a></li>
+                            <li><a href="https://www.linkedin.com/in/colinb23/" class="nav_links" target="_blank" rel="noopener"><img src="images/In-Black-34px-R.png" alt="Connect with me on LinkedIn"></a></li>
+                            <li><a href="https://github.com/cpbingham" class="nav_links" target="_blank" rel="noopener"><img src="images/GitHub-Mark-32px.png" alt="View my GitHub"></a></li>
                         </ul>
                     </li>
                 </ul>
             </nav>
         </header>
 
-        <!--Contact Card-->
-        <article>
-            <img src="images/dummyProfile.jpeg" alt="Headshot">
+        <!--Profile-->
+        <section class="profile">
+            <img src="images/profile.jpeg" alt="Headshot" class="profile_pic">
             <h2>Colin Bingham</h2>
             <h4>Software Developer in Toronto, CA</h4>
-        </article>
+            <p>
+                Welcome to my personal website! This site is meant to serve as a
+                central hub for information about myself, my work and anything
+                else I decide to be worth sharing. My intention is for my site
+                to be able to grow and adapt over time with me in order to best
+                fit my needs.
+            </p>
+        </section>
 
         <!--About Me-->
-        <section>
+        <section class="about" id="about">
             <h2>About Me</h2>
+            <p>
+                Hello! I'm Colin, a software developer currently based in Toronto,
+                CA who is interested in building things for the modern internet.
+                I'm passionate about working on products that are capable of making a
+                positive, real world impact. My goal is to help promote and contribute
+                to the use and development of software that will help keep the
+                internet safe, free and open to everyone.
+            </p>
+            <p>
+                I graduated from Queen's University in 2018, where I obtained a
+                degree in Computer Science, specializing in Software Design. After
+                spending the summer travelling, I joined Tata Consultancy Services
+                in September, where I have been working as a software developer since.
+            </p>
+            <p>
+                In my spare time I most enjoy exercise, being in the outdoors,
+                cooking, playing/listening to music and learning new things.
+            </p>
         </section>
 
         <!--Portfolio-->
-        <section>
+        <section class="portfolio" id="portfolio">
             <h2>Portfolio</h2>
+            <div class="projects">
+                <div class="dummy_project">
+                    <img src="images/QAlog200px.png" alt="asd" class="img1">
+                    <h4>QAlog</h4>
+                        <p>
+                            For our degrees capstone project, my team of 3 and I
+                            were contracted by Kingston General Hospital to develop
+                            a mobile application to allow anesthesiology residents
+                            log and evaluate the medical interventions they perform.
+                            QAlog was developed for iOS and Android in C# using Xamarin.
+                            The primary goal of this application is to provide
+                            residents with an effective and user-friendly way to
+                            record the anesthetic and echocardiographic operations
+                            they've completed as part of their residency.
+                        </p>
+                        <h5>C# Xamarin Azure</h5>
+                        <a href="https://github.com/cpbingham" target="_blank" rel="noopener"><img src="images/GitHub-Mark-32px.png" alt="View my GitHub"></a>
+                        <a href="#" target="_blank" rel="noopener"><img src="images/external-link-34px.png" alt="View my GitHub"></a>
+                </div>
+
+                <div class="dummy_project">
+                    <img src="images/houseMatch250px.jpg" alt="asd" class="img1">
+                    <h4>houseMatch</h4>
+                        <p>
+                            Worked in a 6-person agile team as a part of a Software
+                            Development course taught in C++. We designed and programmed
+                            an online housing service which connects students looking
+                            for temporary housing with students who have available
+                            rooms. The application used NodeJS and the REST API to
+                            connect clients to a web server which used C++ objects
+                            wrapped using Google's v8 Javascript engine library.
+                        </p>
+                        <h5>C++ JavaScript HTML CSS </h5>
+                        <a href="https://github.com/cpbingham" target="_blank" rel="noopener"><img src="images/GitHub-Mark-32px.png" alt="View my GitHub"></a>
+                        <a href="https://devpost.com/software/housematch" target="_blank" rel="noopener"><img src="images/external-link-34px.png" alt="View project on DevPost."></a>
+                </div>
+
+            </div>
         </section>
 
         <!--Contact-->
-        <section>
+        <section class="contact" id="contact">
             <h2>Contact</h2>
+            <p>Whether you want to discuss an interesting project/opportunity, or just say hello, my inbox is always open!
+                Please feel free to reach out to me via Email or through my LinkedIn.
+            </p>
+            <a href="mailto: cbingham96@gmail.com"><img src="images/email-32px.png" alt="Send me an Email"></a>
+            <a href="https://www.linkedin.com/in/colinb23/" target="_blank" rel="noopener"><img src="images/In-Black-34px-R.png" alt="Connect with me on LinkedIn"></a>
         </section>
+
         <!--Footer-->
-        <footer>
+        <footer class="footer">
             <a href="#">&copy 2019 Colin Bingham</a>
             <script src="scripts/index.js"></script>
         </footer>
