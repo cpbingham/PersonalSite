@@ -111,9 +111,6 @@ body {
   padding: 0.5em 0;
 }
 
-.main_nav > li:hover{
-  background-color: red;
-}
 
 .contact {
   text-align: center;
