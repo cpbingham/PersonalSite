@@ -79,22 +79,22 @@ body {
 
 .about {
   background-color: #A7B3A5;
-  text-align: center;
-  padding: 1em 2em;
   margin: 1em 0;
+  padding: 1em 2em;
+  text-align: center;
 }
 
 .portfolio {
   background-color: #B56357;
-  text-align: center;
   padding: 1em 2em;
+  text-align: center;
 }
 
 .projects {
   display: grid;
-  grid-template-columns: repeat(auto-fill, minmax(300px, 1fr));
   grid-auto-rows: minmax(100px, auto);
   grid-gap: 20px;
+  grid-template-columns: repeat(auto-fill, minmax(300px, 1fr));
 }
 
 .projects > div {
@@ -115,16 +115,16 @@ body {
 
 
 .contact {
-  text-align: center;
   background-color: #A7B3A5;
   margin: 1em 0;
   padding: 1em 2em;
+  text-align: center;
 }
 
 .footer {
   border-top: 1px solid black;
-  text-align: center;
   padding-top: 1em;
+  text-align: center;
 }
 
 .footer_link {
@@ -158,10 +158,10 @@ body {
     padding-bottom: 0;
   }
   .main_nav {
-    margin: 0;
     display: flex;
     flex-direction: row;
     justify-content: flex-end;
+    margin: 0;
     margin-right: 30px;
   }
 
