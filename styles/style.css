@@ -102,7 +102,7 @@ p {
   display: grid;
   grid-auto-rows: minmax(100px, auto);
   grid-gap: 20px;
-  grid-template-columns: repeat(auto-fill, minmax(300px, 1fr));
+  grid-template-columns: repeat(auto-fill, minmax(350px, 1fr));
 }
 
 .projects > div {
@@ -119,6 +119,21 @@ p {
 
 .main_nav > li:active {
   background-color: #EAE3EA;
+}
+
+.personal_site {
+  content: url('../images/personalSite250px.png');
+  margin: auto;
+}
+
+.qalog {
+  content: url('../images/QAlog200px.png');
+  margin: auto;
+}
+
+.housematch {
+  content: url('../images/houseMatch250px.jpg');
+  margin: auto;
 }
 
 
@@ -163,11 +178,6 @@ p {
   .main_nav > li:active {
     background-color: #FFFFFF;
   }
-
-  .projects {
-    grid-template-columns: repeat(auto-fill, minmax(350px, 1fr));
-  }
-
 
   .profile {
     margin-top: 5em;
@@ -224,5 +234,16 @@ p {
   .logo:visited, .nav_links:visited {
     color: #000;
     text-decoration: none;
+  }
+}
+
+
+@media screen and (max-width: 399px) {
+  .html {
+    background-color: red;
+  }
+
+  .projects {
+      grid-template-columns: repeat(auto-fill, minmax(180px, 1fr));
   }
 }
