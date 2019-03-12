@@ -1,8 +1,18 @@
+/****** General Styles ******/
+html {
+  font-size: 20px;
+}
+
 body {
   margin: 0;
   padding: 0 5%;
 }
 
+p {
+  font-size: 0.8em;
+}
+
+/****** Header Styles ******/
 .header {
   background-color: #fff;
   position: fixed;
@@ -10,6 +20,7 @@ body {
   width: 90%;
 }
 
+/****** Navigation Styles ******/
 .navbar * {
   margin: 0;
   padding: 0;
@@ -31,7 +42,6 @@ body {
   list-style-type: none;
 }
 
-
 .main_nav {
   margin-top: 1em;
 }
@@ -41,7 +51,7 @@ body {
 
 .secondary_nav li {
   display: inline;
-  padding: 0 auto;
+  padding: 0 0.5em;
 }
 
 .logo {
@@ -57,21 +67,33 @@ body {
     top: 6px;
 }
 
+.main_nav > li {
+  border-top: 1px solid black;
+  padding: 0.5em 0;
+}
+
+.main_nav > li:active {
+  background-color: #EAE3EA;
+}
+
 .active {
   display: block;
 }
 
+.section_title {
+  margin: 0.5em;
+}
 
-
+/****** Profile Section Styles ******/
 .profile {
   background-color: #B4DBC0;
-  margin-top: 3em;
-  text-align: center;
+  margin-top: 2em;
   padding: 1em 2em;
+  text-align: center;
 }
 
 .profile_pic {
-  border: 3px solid #056571;
+  border: 3px solid #A7B3A5;
   border-radius: 50%;
   display: inline-block;
   height: 150px;
@@ -79,67 +101,99 @@ body {
   width: 150px;
 }
 
+/****** About Me Styles ******/
 .about {
-  background-color: #B56357;
-  text-align: center;
-  padding: 1em 2em;
+  background-color: #A7B3A5;
   margin: 1em 0;
+  padding: 1em 2em;
+  text-align: center;
 }
 
+
+/****** Portfolio Section Styles ******/
 .portfolio {
-  background-color: #EAE3EA;
-  text-align: center;
-  border: 1px solid black;
+  background-color: #B56357;
   padding: 1em 2em;
+  text-align: center;
 }
 
 .projects {
   display: grid;
-  grid-template-columns: repeat(auto-fill, minmax(300px, 1fr));
   grid-auto-rows: minmax(100px, auto);
   grid-gap: 20px;
+  grid-template-columns: repeat(auto-fill, minmax(400px, 1fr));
 }
 
 .projects > div {
+  background-color: #EAE3EA;
+  border: 2px solid #A7B3A5;
   border-radius: 5px;
   padding: 1em 0.5em;
-  background-color: #A7B3A5;
-  border: 2px solid #EDDBCD;
 }
 
-.main_nav > li {
-  border-top: 1px solid black;
-  padding: 0.5em 0;
+.personal_site {
+  content: url('../images/personalSite350px.png');
+  margin: auto;
 }
 
+.qalog {
+  content: url('../images/QAlog250px.png');
+  margin: auto;
+}
 
+.housematch {
+  content: url('../images/houseMatch350px.png');
+  margin: auto;
+}
+
+/****** Contact Section Styles ******/
 .contact {
-  text-align: center;
-  background-color: #B56357;
+  background-color: #A7B3A5;
   margin: 1em 0;
   padding: 1em 2em;
+  text-align: center;
 }
 
+/****** Footer Styles ******/
 .footer {
   border-top: 1px solid black;
+  padding-bottom: 0.5em;
+  padding-top: 0.5em;
   text-align: center;
-  padding-top: 1em;
 }
 
+.footer_link {
+  padding: 0 0.5em;
+}
 
+.footer a:link {
+  color: #000000;
+  text-decoration: none;
+}
 
+.footer a:visited {
+  color: #000000;
+  text-decoration: none;
+}
+
+.footer a:hover {
+  color: #D3D3D3;
+}
+
+/* Custom styling for devies up to 768px wide */
 @media screen and (min-width: 768px) {
-  .main_nav > li{
-    border: none;
+
+  /****** Navigation Styles ******/
+  .logo {
+    margin-top: 0;
   }
 
-  .projects {
-    grid-template-columns: repeat(auto-fill, minmax(350px, 1fr));
-  }
-
-
-  .profile {
-    margin-top: 5em;
+  .main_nav {
+    display: flex;
+    flex-direction: row;
+    justify-content: flex-end;
+    margin: 0;
+    margin-right: 30px;
   }
 
   .navbar {
@@ -149,16 +203,13 @@ body {
     justify-content: space-between;
     padding-bottom: 0;
   }
-  .main_nav {
-    margin: 0;
-    display: flex;
-    flex-direction: row;
-    justify-content: flex-end;
-    margin-right: 30px;
+
+  .navbar-toggle {
+    display: none;
   }
 
-  .main_nav li {
-    margin: auto 0;
+  .nav_links {
+    margin-left: 40px;
   }
 
   .secondary_nav {
@@ -168,29 +219,73 @@ body {
     margin-right: 30px;
   }
 
-  .secondary_nav li {
-    margin: auto 0;
-  }
-
-  .nav_links {
-    margin-left: 40px;
-  }
-
-  .logo {
-    margin-top: 0;
-  }
-
-  .navbar-toggle {
-    display: none;
-  }
-
   .logo:hover,
   .nav-links:hover {
-      color: #ffffff;
+    color: #ffffff;
   }
 
   .logo:visited, .nav_links:visited {
     color: #000;
     text-decoration: none;
   }
+
+  .main_nav li {
+    margin: auto 0;
+  }
+
+  .main_nav > li{
+    border: none;
+  }
+
+  .main_nav > li:active {
+    background-color: #FFFFFF;
+  }
+
+  .secondary_nav li {
+    margin: auto 0;
+    padding: 0 0.1em;
+  }
+
+  /****** Profile Section Styles ******/
+  .profile {
+    margin-top: 5em;
+  }
+
+}
+
+/* Custome styling for devices less than 500px wide */
+@media screen and (max-width: 500px) {
+
+  /****** Portfolio Section Styles ******/
+  .projects {
+      grid-template-columns: repeat(auto-fill, minmax(300px, 1fr));
+  }
+
+  .personal_site {
+    content: url('../images/personalSite250px.png');
+  }
+
+  .housematch {
+    content: url('../images/houseMatch250px.png');
+  }
+
+}
+
+
+/* Custome styling for devices less than 400px wide */
+@media screen and (max-width: 399px) {
+
+  /****** Portfolio Section Styles ******/
+  .projects {
+    grid-template-columns: repeat(auto-fill, minmax(180px, 1fr));
+  }
+
+  .personal_site {
+    content: url('../images/personalSite150px.png');
+  }
+
+  .housematch {
+    content: url('../images/houseMatch150px.png');
+  }
+
 }

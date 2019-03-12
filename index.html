@@ -13,11 +13,12 @@
     <body>
         <!--Header-->
         <header class="header">
+            <!-- Nav Bar -->
             <nav class="navbar">
                 <span class="navbar-toggle" id="js_navbar_toggle">
                   <i class="fa fa-bars"></i>
                 </span>
-                <a href="#" class="logo">Colin Bingham</a>
+                <a href="" class="logo">Colin Bingham</a>
                 <ul class="main_nav">
                     <li><a href="#about" class="nav_links">about</a></li>
                     <li><a href="#portfolio" class="nav_links">portfolio</a></li>
@@ -26,7 +27,7 @@
                     <li>
                         <ul class="secondary_nav">
                             <li><a href="mailto: cbingham96@gmail.com" class="nav_links"><img src="images/email-32px.png" alt="Send me an Email"></a></li>
-                            <li><a href="https://www.linkedin.com/in/colinb23/" class="nav_links" target="_blank" rel="noopener"><img src="images/In-Black-34px-R.png" alt="Connect with me on LinkedIn"></a></li>
+                            <li><a href="https://www.linkedin.com/in/colin-bingham/" class="nav_links" target="_blank" rel="noopener"><img src="images/In-Black-34px-R.png" alt="Connect with me on LinkedIn"></a></li>
                             <li><a href="https://github.com/cpbingham" class="nav_links" target="_blank" rel="noopener"><img src="images/GitHub-Mark-32px.png" alt="View my GitHub"></a></li>
                         </ul>
                     </li>
@@ -50,7 +51,7 @@
 
         <!--About Me-->
         <section class="about" id="about">
-            <h2>About Me</h2>
+            <h2 class="section_title">About Me</h2>
             <p>
                 Hello! I'm Colin, a software developer currently based in Toronto,
                 CA who is interested in building things for the modern internet.
@@ -73,10 +74,26 @@
 
         <!--Portfolio-->
         <section class="portfolio" id="portfolio">
-            <h2>Portfolio</h2>
+            <h2 class="section_title">Portfolio</h2>
             <div class="projects">
-                <div class="dummy_project">
-                    <img src="images/QAlog200px.png" alt="asd" class="img1">
+
+                <!-- Personal Site -->
+                <div class="project">
+                    <div class="personal_site"></div>
+                    <h4>Personal Site</h4>
+                        <p>
+                            If you are curious about code behind this site it is
+                            available on GitHub. It is entirely designed and built
+                            by me and you are welcome to use any or all of the code.
+                        </p>
+                        <h5>HTML CSS JavaScript</h5>
+                        <a href="https://github.com/cpbingham/PersonalSite" target="_blank" rel="noopener"><img src="images/GitHub-Mark-32px.png" alt="View source code"></a>
+                        <a href="https://colinbingham.com/"><img src="images/external-link-34px.png" alt="View project"></a>
+                </div>
+
+                <!-- QAlog -->
+                <div class="project">
+                    <div class="qalog"></div>
                     <h4>QAlog</h4>
                         <p>
                             For our degrees capstone project, my team of 3 and I
@@ -90,12 +107,11 @@
                             they've completed as part of their residency.
                         </p>
                         <h5>C# Xamarin Azure</h5>
-                        <a href="https://github.com/cpbingham" target="_blank" rel="noopener"><img src="images/GitHub-Mark-32px.png" alt="View my GitHub"></a>
-                        <a href="#" target="_blank" rel="noopener"><img src="images/external-link-34px.png" alt="View my GitHub"></a>
                 </div>
 
-                <div class="dummy_project">
-                    <img src="images/houseMatch250px.jpg" alt="asd" class="img1">
+                <!--houseMatch -->
+                <div class="project">
+                    <div class="housematch"></div>
                     <h4>houseMatch</h4>
                         <p>
                             Worked in a 6-person agile team as a part of a Software
@@ -107,7 +123,6 @@
                             wrapped using Google's v8 Javascript engine library.
                         </p>
                         <h5>C++ JavaScript HTML CSS </h5>
-                        <a href="https://github.com/cpbingham" target="_blank" rel="noopener"><img src="images/GitHub-Mark-32px.png" alt="View my GitHub"></a>
                         <a href="https://devpost.com/software/housematch" target="_blank" rel="noopener"><img src="images/external-link-34px.png" alt="View project on DevPost."></a>
                 </div>
 
@@ -116,12 +131,12 @@
 
         <!--Contact-->
         <section class="contact" id="contact">
-            <h2>Contact</h2>
+            <h2 class="section_title">Contact</h2>
             <p>Whether you want to discuss an interesting project/opportunity, or just say hello, my inbox is always open!
                 Please feel free to reach out to me via Email or through my LinkedIn.
             </p>
-            <a href="mailto: cbingham96@gmail.com"><img src="images/email-32px.png" alt="Send me an Email"></a>
-            <a href="https://www.linkedin.com/in/colinb23/" target="_blank" rel="noopener"><img src="images/In-Black-34px-R.png" alt="Connect with me on LinkedIn"></a>
+            <a class="footer_link" href="mailto: cbingham96@gmail.com"><img src="images/email-32px.png" alt="Send me an Email"></a>
+            <a class="footer_link" href="https://www.linkedin.com/in/colin-bingham/" target="_blank" rel="noopener"><img src="images/In-Black-34px-R.png" alt="Connect with me on LinkedIn"></a>
         </section>
 
         <!--Footer-->
